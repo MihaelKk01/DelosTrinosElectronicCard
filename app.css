@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e9e5dc;
+    color: #202b35;
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+.website {
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+}
+
+.page {
+    min-height: 650px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* FRONT PAGE */
+
+.home-page {
+    background: #202b35;
+    color: #f6f0e5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 45px;
+}
+
+.top-label,
+.section-label {
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    color: #dca77d;
+}
+
+.home-content {
+    max-width: 650px;
+    margin: 70px auto;
+    text-align: center;
+}
+
+.small-text {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #c6a98e;
+    margin-bottom: 22px;
+}
+
+.home-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 8vw, 76px);
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+.home-content h1 span {
+    color: #dfa87c;
+    font-style: italic;
+}
+
+.home-description {
+    max-width: 430px;
+    margin: 25px auto 35px;
+    line-height: 1.8;
+    color: #d5d3ce;
+    font-size: 14px;
+}
+
+.main-button {
+    background: #dfa87c;
+    color: #202b35;
+    border: none;
+    padding: 16px 27px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-button span {
+    margin-left: 15px;
+}
+
+.main-button:hover {
+    background: #f3c49e;
+    transform: translateY(-3px);
+}
+
+.home-footer {
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #aeb3b5;
+}
+
+
+/* PUZZLE PAGE */
+
+.puzzle-page {
+    background: #f6f0e5;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+.puzzle-content {
+    margin: auto;
+    text-align: center;
+    max-width: 550px;
+    width: 100%;
+}
+
+.puzzle-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 6vw, 48px);
+    margin-bottom: 15px;
+}
+
+.puzzle-instruction {
+    color: #73777a;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+.puzzle-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+}
+
+.puzzle-choice {
+    background: white;
+    border: 1px solid #ddd6ca;
+    border-radius: 8px;
+    padding: 22px 10px;
+    font-size: 29px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.puzzle-choice span {
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    margin-top: 9px;
+    color: #303a42;
+}
+
+.puzzle-choice:hover {
+    border-color: #c38c62;
+    background: #fffaf1;
+    transform: translateY(-4px);
+}
+
+.feedback {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #73777a;
+    min-height: 20px;
+}
+
+.back-button {
+    background: transparent;
+    border: none;
+    color: #b47e55;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    align-self: flex-start;
+}
+
+
+/* LETTER PAGE */
+
+.letter-page {
+    background: #e5ded1;
+    padding: 30px;
+}
+
+.letter-top {
+    display: flex;
+    justify-content: space-between;
+    color: #6d777c;
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.letter-paper {
+    max-width: 700px;
+    margin: auto;
+    background: #fffdf7;
+    padding: clamp(25px, 6vw, 65px);
+    box-shadow: 0 12px 35px #202b3518;
+    border: 1px solid #e6dfd2;
+}
+
+.letter-decoration {
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #bb8965;
+    margin-bottom: 20px;
+}
+
+.letter-paper h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(35px, 6vw, 54px);
+    line-height: 1.15;
+    font-weight: 500;
+    color: #293743;
+}
+
+.letter-paper h2 span {
+    color: #bb8965;
+    font-style: italic;
+}
+
+.letter-line {
+    width: 65px;
+    height: 3px;
+    background: #d6a47e;
+    margin: 27px 0;
+}
+
+.letter-message {
+    font-size: 14px;
+    line-height: 2;
+    color: #4b5356;
+}
+
+.letter-message p {
+    margin-bottom: 19px;
+    text-align: justify;
+}
+
+.letter-message p:first-child {
+    font-weight: 700;
+    color: #293743;
+}
+
+.letter-message .closing {
+    font-weight: 700;
+    color: #a87854;
+}
+
+.signature-area {
+    margin-top: 35px;
+    border-top: 1px solid #e6dfd2;
+    padding-top: 25px;
+}
+
+.signature-area span,
+.signature-area p {
+    font-size: 12px;
+    color: #777d7d;
+}
+
+.signature-area h3 {
+    font-family: 'Caveat', cursive;
+    font-size: 38px;
+    color: #293743;
+    margin-top: 5px;
+}
+
+.signature-area p {
+    margin-top: 2px;
+}
+
+.letter-back {
+    display: block;
+    margin: 25px auto 0;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .page {
+        min-height: 620px;
+    }
+
+    .home-page {
+        padding: 28px 20px;
+    }
+
+    .home-content {
+        margin: 90px auto;
+    }
+
+    .puzzle-page {
+        padding: 28px 20px;
+    }
+
+    .letter-page {
+        padding: 20px 12px;
+    }
+
+    .letter-paper {
+        padding: 25px 20px;
+    }
+
+    .letter-message {
+        font-size: 13px;
+    }
+}

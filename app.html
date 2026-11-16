@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A Little Note of Appreciation</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+
+        <main class="website">
+
+            <!-- FRONT PAGE -->
+            <section id="homePage" class="page home-page">
+                <div class="top-label">A SPECIAL MESSAGE FOR YOU</div>
+
+                <div class="home-content">
+                <p class="small-text">A little something from your student</p>
+
+                <h1>
+                    A Little Note<br>
+                    <span>of Appreciation.</span>
+                </h1>
+
+                <p class="home-description">
+                    Some teachers leave lessons in our minds,
+                    but the best ones leave memories in our hearts.
+                </p>
+
+                <button class="main-button" onclick="startPuzzle()">
+                    Begin the Surprise <span>→</span>
+                </button>
+            </div>
+
+            <div class="home-footer">
+                MADE WITH GRATITUDE ♡
+            </div>
+            </section>
+
+
+            <!-- PUZZLE PAGE -->
+            <section id="puzzlePage" class="page puzzle-page hidden">
+                <div class="section-label">A LITTLE CHALLENGE</div>
+
+                <div class="puzzle-content">
+                <p class="small-text">Before you open your message...</p>
+
+                <h2>Find the odd one out.</h2>
+
+                <p class="puzzle-instruction">
+                    Which item does NOT belong with the others?
+                </p>
+
+                <div class="puzzle-options">
+                    <button class="puzzle-choice" onclick="checkAnswer('pencil')">
+                        ✏️ <span>Pencil</span>
+                    </button>
+
+                    <button class="puzzle-choice" onclick="checkAnswer('eraser')">
+                        🧽 <span>Eraser</span>
+                    </button>
+
+                    <button class="puzzle-choice" onclick="checkAnswer('banana')">
+                        🍌 <span>Banana</span>
+                    </button>
+
+                    <button class="puzzle-choice" onclick="checkAnswer('notebook')">
+                        📓 <span>Notebook</span>
+                    </button>
+                </div>
+
+                <p id="feedback" class="feedback">
+                    Choose your answer to continue.
+                </p>
+            </div>
+
+            <button class="back-button" onclick="goHome()">← Back</button>
+            </section>
+
+
+            <!-- APPRECIATION LETTER PAGE -->
+            <section id="letterPage" class="page letter-page hidden">
+
+                <div class="letter-top">
+                <span>FROM A GRATEFUL STUDENT</span>
+                <span>♡</span>
+                </div>
+
+                <article class="letter-paper">
+
+                <div class="letter-decoration">A NOTE FOR YOU</div>
+
+                <h2>To<br>
+                    <span>Ma'am Roan</span>
+                </h2>
+
+                <div class="letter-line"></div>
+
+                <div class="letter-message">
+                    <p>Hello po, Ma'am Roan!</p>
+
+                    <p>
+                        Gusto ko lang po mag pasalamat dahil kayo po ang naging teacher ko.
+                        Sobrang thankful po ako dahil marami akong
+                        natutunan sa inyo, hindi lang po sa lessons
+                        natin kundi pati na rin sa mga bagay na
+                        magagamit ko sa araw-araw.
+                    </p>
+
+                    <p>
+                        Napakagaling niyo po magturo at talagang
+                        naiintindihan ko ang mga tinatalakay natin
+                        dahil sa paraan ninyo ng pagpapaliwanag.
+                        Bukod po roon, napakasaya rin ng klase ninyo.
+                        Kahit minsan ay makulit kami, maingay, at
+                        hindi agad sumusunod, nagagawa niyo pa rin
+                        pong gawing masaya at memorable ang bawat
+                        klase. Pasensya na po sa mga pagkakataong
+                        naging makulit kami at nakadagdag sa
+                        pagod ninyo.
+                    </p>
+
+                    <p>
+                        May mga pagkakataon din po na hindi ko agad
+                        naiintindihan ang mga tinuturo ninyo, pero
+                        dahil sa patience at effort ninyo,
+                        natututo rin po ako. Kaya sobrang
+                        naa-appreciate ko po ang oras at effort
+                        na ibinibigay ninyo para maturuan kami.
+                    </p>
+
+                    <p>
+                        Naaalala ko pa nga po noong una nating
+                        klase, yung time na hinampas niyo pa ako
+                        dahil hindi ko maintindihan yung tungkol
+                        sa file. Hahaha! Isa po iyon sa mga
+                        hindi ko makakalimutang memories natin.
+                        Kahit ganoon, masaya pa rin po ako dahil
+                        naging teacher ko kayo at naging parte
+                        kayo ng school memories ko.
+                    </p>
+
+                    <p>
+                        Sana po ay magkaroon pa ulit ako ng
+                        pagkakataong maging estudyante ninyo
+                        sa susunod. Masaya po akong matuto ulit
+                        sa inyo at makasama kayo sa klase.
+                        Maraming salamat po sa lahat ng
+                        kaalaman, effort, patience, at masasayang
+                        memories na ibinigay ninyo sa amin.
+                    </p>
+
+                    <p>
+                        Hindi man po palaging nasasabi,
+                        gusto ko pong malaman ninyo na
+                        naa-appreciate ko po kayo bilang teacher.
+                        Sana po ay patuloy kayong maging inspirasyon
+                        sa marami pang estudyante.
+                    </p>
+
+                    <p class="closing">
+                        Maraming-maraming salamat po, Ma'am Roan!
+                        God bless po always! ♡
+                    </p>
+                </div>
+
+                <div class="signature-area">
+                    <span>Lubos na nagpapasalamat,</span>
+                    <h3>Aaron Delos Trinos</h3>
+                    <p>Your grateful student</p>
+                </div>
+
+                </article>
+
+                <button class="back-button letter-back" onclick="goHome()">
+                ← Back to beginning
+                </button>
+
+            </section>
+
+        </main>
+
+        <script src="app.js"></script>
+    </body>
+</html>
